@@ -10,7 +10,9 @@
 
    * `do-what-it-says`
 
-* Note this application uses Node.js and several modules (dotenv, jquery, moment, node-spotify-api, and axios). Please install them prior to running the application.
+* Note this application uses Node.js and several modules (dotenv, jquery, moment, node-spotify-api, and axios). Please install them prior to running the application by typing:
+
+	* `npm install`
 
 ##  Usage
 
