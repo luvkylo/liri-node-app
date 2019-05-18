@@ -106,7 +106,7 @@ function work(command, arg) {
 			var movie = "i=tt0485947";
 		} else if (input.length > 1) {
 			var movie = "t=";
-			movie += input.join("%20");
+			movie += input.join("+");
 		} else {
 			var movie = "t=" + input[0];
 		}
