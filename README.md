@@ -79,7 +79,11 @@ If movie does not exist, an error is thrown:
 
 ![Result](image/MovieNotFound.png)
 
-### run command from text file
+### 4. Run command from text file
+
+You can have your command be run from a .txt file. 
+
+* Please name the file to `random.txt`
 
 ![Result](image/txt.png)
 ![Result](image/do.png)
