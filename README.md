@@ -85,5 +85,19 @@ You can have your command be run from a .txt file.
 
 * Please name the file to `random.txt`
 
+	* `node liri.js do-what-it-says`
+
 ![Result](image/txt.png)
 ![Result](image/do.png)
+
+## Error
+
+If you do not have the correct command, an error is thrown
+
+![Result](image/error.png)
+
+## Log
+
+You correct command will also be logged into `log.txt` for later use
+
+![Result](image/log.png)

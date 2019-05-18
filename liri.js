@@ -142,6 +142,11 @@ function work(command, arg) {
 	}
 } 
 
+var log = "";
+
+for (var i = 2; i < process.argv.length; i++) {
+	log = log + process.argv[i] + " ";
+}
 
 if (command === "concert-this" || command === "spotify-this-song" || command === "movie-this") {
 	work(command, process.argv.splice(3, process.argv.length - 1));
@@ -158,9 +163,12 @@ if (command === "concert-this" || command === "spotify-this-song" || command ===
 		work(dataArr[0], dataArr[1].split('"')[1].split(" "));
 
 	});
+} else {
+	return console.log("Please input correct command (concert-this, spotify-this-song, movie-this, do-what-it-says)");
 }
 
-fs.appendFile("log.txt", process.argv, function(err) {
+
+fs.appendFile("log.txt", (log + " \n"), function(err) {
 
 	// If an error was experienced we will log it.
 	if (err) {
